@@ -14,7 +14,7 @@ const PriceList = () => {
             <h3 className="text-5xl bg-purple-300 font-bold text-center p-4">Awesome affordable Price</h3>
             <div className='grid md:grid-cols-3'>
                 {
-                    prices.map(price => <PriceCart  price={price} ></PriceCart>)
+                    prices.map((price,index) => <PriceCart key={index}  price={price} ></PriceCart>)
                 }
             </div>
         </div>
